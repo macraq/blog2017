@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    {% for article in articles %}
+    <div class="row">
+        <div class="col-md-12">
+            {{ article.title }}
+        </div>
+        <div class="col-md-12">
+            {{ article.description }}
+        </div>
+        <div class="col-md-12">
+            <a href="{% url 'post_show' post_id=article.id %}">czytaj więcej</a>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}

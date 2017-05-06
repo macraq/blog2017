@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+
+# git clone https://github.com/macraq/blog2017
+
 from __future__ import unicode_literals
 
 from django.db import models
