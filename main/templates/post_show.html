@@ -10,4 +10,14 @@
             {{ article.description }}
         </div>
     </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <form method="POST">
+            {% csrf_token %}
+            {{ comment_form.as_p }}
+            <button type="submit">Dodaj</button>
+            </form>
+        </div>
+    </div>
 {% endblock %}
